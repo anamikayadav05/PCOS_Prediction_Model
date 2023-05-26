@@ -8,7 +8,14 @@ PCOS is a common hormonal disorder among women of reproductive age. It affects a
 The model was trained on a dataset of 500 patients, which included their demographic information, clinical features, and biochemical parameters. The data was collected from patients who had been diagnosed with PCOS as well as those who were healthy.
 
 ## Model
-The model was built using the XGBoost algorithm, which is a powerful and efficient machine learning algorithm for classification tasks. The model was trained on the dataset using a variety of clinical and biochemical features to predict the likelihood of a patient having PCOS.
+In this project, we initially employed feature selection methods to handle different types of features. For categorical features, we utilized the chi-square test, while for continuous features, we applied the Lasso regression method.
+
+Following the feature selection stage, we proceeded with feature extraction using Principal Component Analysis (PCA). PCA helps in reducing the dimensionality of the dataset while retaining the most relevant information.
+
+Once the feature extraction was completed, we moved on to the classification phase. We implemented various classification algorithms, including logistic regression, random forest, K-nearest neighbors (KNN), and Gaussian naive Bayes. These algorithms were employed to predict and classify the target variable based on the selected features.
+
+Overall, the project involved a comprehensive pipeline that encompassed feature selection, feature extraction, and classification using a range of algorithms to achieve accurate predictions.
+
 
 ## Usage
 To use the model, simply input the patient's clinical and biochemical parameters into the model, and it will output a prediction of the likelihood of the patient having PCOS. The model can be integrated into clinical decision support systems or used as a standalone tool for PCOS diagnosis and management.
